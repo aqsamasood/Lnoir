@@ -1,0 +1,511 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,html
+{
+	position:relative;
+	font-family: Chalet-Paris;
+	font-weight:bold;
+	margin:0;
+	height:100%;
+}
+
+
+@font-face {
+	font-family: Chalet-Paris;
+	src: url('Chalet-Paris.ttf');
+}
+a
+{
+	text-decoration:none;
+	color:black;
+}
+p
+{
+	line-height:20px;
+}
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 600px;
+  	padding: 0 0 106px;
+    position: relative;
+}
+nav ul {
+    list-style: none outside none;
+    text-align: center;
+
+}
+nav ul li {
+    display: inline;
+    position: relative;
+
+}
+nav ul li a {
+    margin-left: 15px;
+    margin-right: 25px;
+    text-transform: uppercase;
+	opacity: 0;
+    position: relative;
+    top: -52px;
+
+}
+
+ul
+{
+	list-style:none;
+	text-align:center;
+	
+}
+footer {
+    clear: left;
+    position: relative;
+    text-align: center;
+ 	overflow:hidden;
+	height:35px;
+}
+footer p {
+    bottom: -40px;
+    left: 0;
+    font-size: 11px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+	
+}
+.Wrapper
+{
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.push
+{
+	height:35px;
+}
+/*******************Styling HOME page***************************/
+#homepage
+{
+	min-height:350px;
+	height:100%;
+	position:relative;
+}
+#homepage a
+{
+	color:black;
+}
+
+#homepage nav {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width:700px;
+;
+}
+#homepage nav li a
+{
+	margin-left: -60px;
+	margin-right: -60px;
+	opacity: 1;
+	position: relative;
+	top: 50px;
+}
+
+#homepage a
+{
+	color:black;
+}
+#homepage #header
+{
+	position:absolute;
+	left:0;
+	right:0;
+	top:48%;
+}
+#homepage footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#homepage footer p {
+    bottom: -30px;
+    left: 0;
+    padding-top: 15px;
+    position: absolute;
+    right: 0;
+}
+
+
+/***********************Styling INFO page***************************************************/
+.titleinfo
+{
+	
+	float:left;
+	margin-right:150px;
+	height:0;
+	width:0;
+	margin-top: 25%;
+	background: url('../images/info_back.png') no-repeat #000000 ;
+	overflow:hidden;
+	position:relative;
+	margin-left:50%;
+}
+.titleinfo .box
+ {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+#contentsWrap
+
+{
+	width: auto;
+	min-height: 100%;
+	height: auto ;
+	margin: 0 auto -4em;
+}
+#infopage a,#infopage p
+{
+	color:#aba9a6;
+}
+#infopage
+{
+	width:1050px;
+	position:relative;
+	min-height:350px;
+	height:100%;
+	margin-top:0px;
+	overflow:visible;
+	display:inline-block;
+	
+}
+#infopage #contents
+{
+	background-color:black;
+	width:0px;
+	height:100%;
+}
+#infopage .text
+{
+	padding-left:75px;
+	padding-right:75px;
+	padding-bottom:5px;
+	font-weight:normal;
+	color:white;
+	margin-left:0px;
+	width:auto;
+	
+}
+#infopage .text p
+{
+	opacity:0;
+	width: 450px;
+	line-height:20px;
+}
+#contents footer
+{
+	color:white;
+    width: 100%;
+	height:30px;
+	text-align:center;
+	font-size:13px;
+	position:relative;
+}
+#contents footer
+{
+		bottom: 0px;
+}
+
+/***********************Styling Company page**********************************/
+#companypage
+{
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+}
+#contents
+{
+	overflow:hidden;
+	width:0;
+}
+#top-border
+{
+    height: 50px;
+    margin-left: 0;
+    margin-right:50px;
+    overflow: hidden;
+    padding-left: 8px;
+}
+#top-border h2
+{
+	background-color:#000000;
+ 	color: #FFFFFF;	
+	margin-top:-9px;
+	font-size: 63px;
+}
+
+#bottom-border
+{
+    background-color:#000000;
+    height: 50px;
+    margin-left: 28%;
+    width: 0;
+}
+.text
+{
+	margin-left: 28%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 530px;
+}
+.text p
+{
+	opacity:0;
+	margin-bottom:15px;
+}
+
+/**********Styling Clients Page***************/
+
+
+#clientspage 
+{	
+	height:100%;
+	position:relative;
+	min-height:550px;
+
+}
+#clientspage a
+{
+	color:black;
+}
+#clientspage #contents
+{
+	min-height:500px;
+	min-width:1130px;
+	position:relative;
+	margin: 0 auto;
+}
+#background 
+{
+	font-size:350px;
+}
+#clients, #background
+{
+	width:1130px;
+	position:absolute;
+	top:100px;
+	left:0px;
+	right:0px;
+	margin:0 auto;
+	height:100%;
+}
+#background span
+{
+	position:absolute;
+	height:400px;
+	font-size:350px;
+	color:#f2f2f2;
+	visibility:hidden;
+	
+}
+#background span:nth-of-child(2)
+{
+	width:180px;
+}
+#background p
+{
+	visibility:hidden;
+}
+
+#clients img
+{
+	opacity:0;
+	left:-10px;
+}
+#clients1 ul {
+	margin-left: -5px;
+	height:150px;
+
+}
+#clients1 ul li{
+	
+	display: inline-block;
+}
+#clients2 ul{
+	margin-left: 60px;
+	height: 100px;
+}
+#clients2 ul li{
+	margin-left: 40px;
+	display: inline-block;
+}
+#clients1 img
+{
+	padding-left:40px;
+	margin-left:-10px;
+}
+#clients2 img
+{
+	padding-right:55px;
+	margin-right:0px;
+}
+
+
+/****************** Styling Contact Page **************/
+
+#contactpage
+{
+  	min-height:600px;
+	height:100%;
+	position:relative; 
+}
+
+#contactpage #contents
+{
+	width:920px;
+	height:400px;
+}
+#contactpage #header
+{
+	padding-bottom:25px;
+}
+#title
+{
+	height:359px;
+	width:500px;
+	position:relative;
+	background-color:black;
+	-moz-animation-name:title_move;
+	-moz-animation-duration:1s;
+	left:0px;
+	float:left;
+	font-size:200px;
+	color:white;
+	overflow:hidden;
+}
+@-moz-keyframes title_move 
+{
+	from {left:-400px;}
+	to {left:0px;}
+}
+#title img
+{
+	position:absolute;
+	top:100%;
+
+}
+#curtain
+{
+	background-color: black;
+	height: 180px;
+	position: absolute;
+	bottom:-5px;
+	width: 500px;
+}
+#contactpage #contact
+{
+	float:left;
+	width:365px;
+	margin-left:15px;
+}
+#mail ul, #details ul
+{
+	margin-left: 80px;
+	width:500px;
+	list-style:none;
+	text-align:justify;
+}
+#details ul
+{
+	padding-top:10px;
+}
+
+#details
+{
+	opacity:0;
+}
+#details  p:after 
+{
+	background-color: black;
+	content: "";
+	height: 10px;
+	left: 45%;
+	position: absolute;
+	top: 5px;
+	width: 10px;
+
+}
+#details p
+{
+	margin-top:-32px;
+	position:relative;
+
+}
+#details li
+{
+	width:350px;
+	border-top:30px solid white;
+	margin-left:-40px;
+	height:60px;
+	
+}
+#mail li
+{
+	position:relative;
+	height:10px;
+	width:0px;
+	margin-left: 30px;
+	border-top:30px solid black;
+	background-color:white;
+	margin-bottom:45px;
+}
+
+#mail, #details
+{
+	margin-top:30px;
+	list-style:none;
+	font-size:15px;
+	margin-left:35px;
+	position:absolute;
+}
+
+#details span
+{
+	width:100px;
+}
+#details p a
+{
+	float:right;
+	
+}
+#address
+{
+	padding-left:40px;
+	margin-top:270px;
+}
+#address p
+{
+	width:400px;
+	position:relative;
+	color:white;
+}
+#address p:nth-of-type(1) span
+{
+	background-color:black;
+	color:white;
+}
+#address span
+{
+	color:black;
+	width:auto;
+	top:100%;
+	font-size:15px;
+	opacity:0;
+}
