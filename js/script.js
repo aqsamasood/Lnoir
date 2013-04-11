@@ -170,11 +170,9 @@ function clientsPage()
 		el = document.querySelector("#background").getElementsByTagName('p');
 		var str=String(el[0].innerHTML);
 		var final_str="";
-		alert(str.length);
 		for(i=0;i<str.length;i++)
 			final_str+="<span>"+str[i]+"</span>";
 		el[0].innerHTML=final_str;
-		alert(final_str);
 		obj2=el[0].getElementsByTagName('span');
 		align_images(obj2,0,str.length,0,-2);
 		show_title(obj2,0,str.length,300,-150,0.2);
