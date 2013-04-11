@@ -86,7 +86,6 @@ function infoPage()
 						});
 				});
 		});
-		
 	$('nav a').on("click",function(){
 		var href = $(this).attr("href");
 		if(href){
@@ -127,7 +126,7 @@ function companyPage()
 			hideHeader();
 			$('#top-border h2').animate({marginLeft:"-2000px"},1000,function(){
 			$('.text').slideUp(700);
-			$('#top-border').animate({marginTop:"+=200px"},1000,function(){	
+			$('#top-border').animate({marginTop:"+=200px"},800,function(){	
 			$('.Wrapper').animate(
 			{width:"90px"},100);
 			$('#bottom-border').animate({left:"0px"},100,function(){
@@ -215,6 +214,7 @@ function showImages()
 }
 function hideImages()
 {
+
 	$("#clinets1 img").each(function(i)
 	{
 		$(this).delay(50*i).animate({marginLeft:'100px', opacity:'0'},500);
@@ -264,7 +264,7 @@ function img_animation()
 			{	
 				if(i == 3)
 				{
-					elem = document.querySelector("div#curtain");
+					elem = document.querySelector("#curtain");
 					elem.style.display="none";
 				}
 				if(i == 6)
