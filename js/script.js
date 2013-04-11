@@ -238,7 +238,7 @@ function show_title(obj,start,count,top,offset,speed)
 	var translate='translate(0px,'+offset+'px)';
 	for(var i=start;i<start+count;i++)
 	{
-		value = property+" "+duration+"s"+" "+timing_func+" "+delay+'s';//transition: property duration timing-function delay;
+		value = property+" "+duration+"s"+" "+timing_func+" "+delay+'s';
 		obj[i].style.visibility= "visible";
 		obj[i].style.top= pos_top+'px';
 		obj[i].style.MozTransition= value;
@@ -252,20 +252,21 @@ function show_title(obj,start,count,top,offset,speed)
 
 /**************************  ContactPage Animation***************************************/
 function contactPage()
-{
+{		var headerAnimationTime = 500;
 	    showHeader();
 	    var el = document.querySelector("#title");
-		 el.addEventListener("animationend",function()
-		{alert('hi')
+		 // el.addEventListener("headerAnimationEnd",function()
+		setTimeout(function()
+		{
 			img_animation();
 			mail_list_animation();
 			setTimeout(function()
 			{
-			adress_animation();
-			showFooter();
+				adress_animation();
+				showFooter();
 			},1500);
-		return false;
-		});
+			return false;
+		},500);
 }
 function img_animation()
 {
