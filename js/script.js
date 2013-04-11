@@ -49,7 +49,7 @@ function homePage()
 			hideHeader();
 			hideFooter();
 			setTimeout(function(){
-				window.location = href;},1400)
+				window.location = href;},800)
 			}
 			return false;
 		});
@@ -167,15 +167,17 @@ function companyPage()
 function clientsPage()
 {
 		showHeader();
-		el = document.querySelector("div#background").getElementsByTagName('p');
+		el = document.querySelector("#background").getElementsByTagName('p');
 		var str=String(el[0].innerHTML);
 		var final_str="";
-		
+		alert(str.length);
 		for(i=0;i<str.length;i++)
 			final_str+="<span>"+str[i]+"</span>";
 		el[0].innerHTML=final_str;
-		
+		alert(final_str);
 		obj2=el[0].getElementsByTagName('span');
+		align_images(obj2,0,str.length,0,-2);
+		show_title(obj2,0,str.length,300,-150,0.2);
 	    showFooter();
 	    setTimeout(function()
 	    {
@@ -228,16 +230,35 @@ function hideTitle()
 {
 	$("#background p").animate({opacity:'0'},500);
 }
-
+function show_title(obj,start,count,top,offset,speed)
+{
+	var property ="all";
+	var duration =0.5;
+	var timing_func="ease";
+	var delay =0.1;
+	var pos_top=top;
+	var translate='translate(0px,'+offset+'px)';
+	for(var i=start;i<start+count;i++)
+	{
+		value = property+" "+duration+"s"+" "+timing_func+" "+delay+'s';//transition: property duration timing-function delay;
+		obj[i].style.visibility= "visible";
+		obj[i].style.top= pos_top+'px';
+		obj[i].style.MozTransition= value;
+		obj[i].style.MozTransform= translate;
+		obj[i].style.WebkitTransition= value;
+		obj[i].style.WebkitTransform= translate;
+		delay=delay+speed;
+	}
+}
 
 
 /**************************  ContactPage Animation***************************************/
 function contactPage()
 {
 	    showHeader();
-	    var el = document.querySelector("div#title");
+	    var el = document.querySelector("#title");
 		 el.addEventListener("animationend",function()
-		{
+		{alert('hi')
 			img_animation();
 			mail_list_animation();
 			setTimeout(function()
@@ -250,7 +271,7 @@ function contactPage()
 }
 function img_animation()
 {
-		var elem = document.querySelector("div.images");
+		var elem = document.querySelector(".images");
 		var img = elem.getElementsByTagName('img');
 		align_images(img,0,3,0,-1);
 		align_images(img,3,4,0,-1);
