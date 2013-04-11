@@ -153,7 +153,7 @@ function companyPage()
 			});	
 			hideFooter();
 			setTimeout(function(){
-			window.location = href},3800)
+			window.location = href},2000)
 			return false;
 			}
 		});

@@ -371,6 +371,7 @@ margin-right:0px;
 min-height:100%;
 height:100%;
 position:relative; 
+overflow: hidden;
 }
 
 #contactpage #contents
@@ -521,5 +522,5 @@ font-size:15px;
 opacity:0;
 }
 #contactpage footer{
-	margin-top: 300px;
+	margin-top: 170px;
 }
