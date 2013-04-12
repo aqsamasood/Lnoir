@@ -81,7 +81,7 @@ font-size: 11px;
 padding-top: 10px;
 position: absolute;
 right: 0;
-
+overflow: hidden;
 }
 .Wrapper
 {
@@ -259,7 +259,7 @@ font-size: 63px;
 
 #bottom-border
 {
-	margin-top: -20px;
+margin-top: -20px;
 background-color:#000000;
 height: 50px;
 margin-left: 28%;
@@ -269,15 +269,18 @@ width: 0;
 {
 margin-left: 28%;
 padding-bottom: 20px;
-padding-top: 20px;
+margin-top: 10px;
 width: 530px;
+overflow: hidden;
 }
 .text p
 {
 opacity:0;
 margin-bottom:10px;
 }
-
+#companypage footer{
+	bottom: -10px;
+}
 /**********Styling Clients Page***************/
 
 
