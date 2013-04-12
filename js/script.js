@@ -95,7 +95,7 @@ function infoPage()
 			$("#contents").delay(100).animate({marginLeft:"900px" ,width:"0px"},800);
 			$(".titleinfo").delay(800).animate({left:"300px" ,width:"0px"},500);
 			setTimeout(function(){
-				 window.location = href;},1800)
+				 window.location = href;},1000)
 			}
 			return false;
 		});
@@ -258,7 +258,7 @@ function contactPage()
 		 // el.addEventListener("headerAnimationEnd",function()
 		setTimeout(function()
 		{
-			img_animation();
+			bg_animation();
 			mail_list_animation();
 			setTimeout(function()
 			{
@@ -268,12 +268,12 @@ function contactPage()
 			return false;
 		},500);
 }
-function img_animation()
+function bg_animation()
 {
 		var elem = document.querySelector(".images");
 		var img = elem.getElementsByTagName('img');
-		align_images(img,0,3,0,-1);
-		align_images(img,3,4,0,-1);
+		align_bg_text(img,0,3,0,-1);
+		align_bg_text(img,3,4,0,-1);
 		$(".images img").each(function(i)
 		{
 			if(i<3)
@@ -328,7 +328,7 @@ function adress_animation()
 	}
 
 }
-function align_images(obj,start,count,left,spacing)
+function align_bg_text(obj,start,count,left,spacing)
 {
 	
 	for(var i=start;i<start+count;i++)
