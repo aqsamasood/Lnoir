@@ -6,6 +6,7 @@
 	text-align: center;
 	margin-top: 300px;
 }
+
 *{
 margin:0;
 padding:0;
@@ -17,6 +18,7 @@ font-family: Chalet-Paris;
 font-weight:bold;
 margin:0;
 height:100%;
+overflow: hidden;
 }
 
 
