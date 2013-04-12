@@ -171,7 +171,7 @@ function clientsPage()
 		var str=String(el[0].innerHTML);
 		var final_str="";
 		for(i=0;i<str.length;i++)
-			final_str+="<span>"+str[i]+"</span>";
+		final_str+="<span>"+str[i]+"</span>";
 		el[0].innerHTML=final_str;
 		obj2=el[0].getElementsByTagName('span');
 		align_images(obj2,0,str.length,0,-2);
@@ -272,8 +272,8 @@ function bg_animation()
 {
 		var elem = document.querySelector(".images");
 		var img = elem.getElementsByTagName('img');
-		align_bg_text(img,0,3,0,-1);
-		align_bg_text(img,3,4,0,-1);
+		align_images(img,0,3,0,-1);
+		align_images(img,3,4,0,-1);
 		$(".images img").each(function(i)
 		{
 			if(i<3)
@@ -328,7 +328,7 @@ function adress_animation()
 	}
 
 }
-function align_bg_text(obj,start,count,left,spacing)
+function align_images(obj,start,count,left,spacing)
 {
 	
 	for(var i=start;i<start+count;i++)
