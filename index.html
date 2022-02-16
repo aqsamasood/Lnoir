@@ -10,4 +10,23 @@
 <div id="indexpage">
 	<h1><a id="home" href="home.html">L'NOIR</a></h1>
 </div>
+<script type="text/javascript">
+   window.lhnJsSdkInit = function () {
+        lhnJsSdk.setup = {
+            application_id: "4643607b-1460-4c09-b309-3da12b83009b",
+            application_secret: "qlmqfizko6nqjulcoo0/r/f29zlcuwrlul1zmcpgxnnylhpjli"
+        };
+        lhnJsSdk.controls = [{
+            type: "hoc",
+            id: "6adc78c3-9c9e-4831-a21b-aa75e3c212af"
+        }];
+        };
+        (function (d, s) {
+            var newjs, lhnjs = d.getElementsByTagName(s)[0];
+            newjs = d.createElement(s);
+            newjs.src = "https://developer.livehelpnow.net/js/sdk/lhn-jssdk-current.min.js";
+            lhnjs.parentNode.insertBefore(newjs, lhnjs);
+        }(document, "script"));
+    </script>
+</script>
 </body>
